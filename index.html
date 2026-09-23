@@ -1,93 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Nawaz | Portfolio</title>
+    <title>My Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
 
-<header>
-    <img src="profile.jpg" alt="Nawaz" class="profile-img">
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">⌫</button>
+            <button onclick="addValue('%')">%</button>
+            <button onclick="addValue('/')">÷</button>
 
-    <h1>Hi, I'm Nawaz 👋</h1>
+            <button onclick="addValue('7')">7</button>
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button onclick="addValue('*')">×</button>
 
-    <p>BCA Student | Beginner Web Developer</p>
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+            <button onclick="addValue('6')">6</button>
+            <button onclick="addValue('-')">−</button>
 
-    <a href="#contact" class="btn">Contact Me</a>
-</header>
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+            <button onclick="addValue('+')">+</button>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Hello! My name is Nawaz. I am a BCA student
-        and I am learning web development.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>My Skills</h2>
-
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-    </ul>
-</section>
-
-<section>
-    <h2>My Education</h2>
-    <p>Bachelor of Computer Applications (BCA)</p>
-</section>
-
-<section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="projects-container">
-
-        <div class="project">
-            <h3>🌐 Personal Portfolio</h3>
-            <p>
-                My first personal website created using HTML and CSS.
-            </p>
-            <a href="#" class="project-btn">View Project</a>
+            <button onclick="addValue('0')" class="zero">0</button>
+            <button onclick="addValue('.')">.</button>
+            <button onclick="calculate()">=</button>
         </div>
-
-        <div class="project">
-            <h3>🧮 Calculator</h3>
-            <p>
-                A simple calculator project built using HTML, CSS and JavaScript.
-            </p>
-            <a href="calculator/index.html" class="project-btn">View Project</a>
-        </div>
-
-        <div class="project">
-            <h3>📝 To-Do List</h3>
-            <p>
-                A simple To-Do List application built using JavaScript.
-            </p>
-            <a href="todo-list/index.html" class="project-btn">View Project</a>
-        </div>
-
     </div>
-</section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: nawazxyz17@gmail.com</p>
-</section>
-
-<footer>
-    <p>© 2026 Nawaz. All Rights Reserved.</p>
-</footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
